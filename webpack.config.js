@@ -36,6 +36,14 @@ module.exports = {
         options: {
           name: '[name].[ext]?[hash]'
         }
+      },
+      //字体文件
+      {
+        test: /\.(ttf|woff2|woff|eot)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]?[hash]'
+        }
       }
     ]
   },
